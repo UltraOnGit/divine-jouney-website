@@ -1,5 +1,5 @@
 import { StrictMode, useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
 import './App.css'
@@ -26,7 +26,7 @@ const worldListItems = worldList.map((world) => <li key={world}>{world}</li>)
             <ul className="submenu">
               <li><a href="#">Collectibles</a></li>
               <li><a href="#">Weapons</a></li>
-              <li><a href="Vaporsteam.jsx">Characters</a></li>
+              <li><a href="/src/assets/pages/Vaporsteam.jsx">Characters</a></li>
             </ul>
             </li>
               <li><a href="#">About the Creator</a></li>
@@ -46,9 +46,15 @@ const worldListItems = worldList.map((world) => <li key={world}>{world}</li>)
         <div className="listDiv">
           <h2>Worlds</h2>
           <ul className='vaporwaveStyle'>{worldListItems}</ul>
+        </div> 
+        <div class="parent">
+            <div class="div1"><img src="/src/assets/images/AscendancyOrb.png" alt="Ascendancy Orb"/></div>
+            <div class="div2"><h1 className="gradient-text">Ascendancy Orb</h1></div>
+            <div class="div3">Ascendancy orbs are the main way to traverse worlds in Divine Journey! After
+              freeing each celestial, they will give you an Ascendancy Orb as a token of trust, allowing you
+              to explore the galaxy further and find more secrets!
+            </div>
         </div>
-        <img src="/src/assets/images/AscendancyOrb.png" alt="Ascendancy Orb" id='leftSpaced'/>
-        <h1 className="gradient-text" id="rightSpaced">Testing testing 123</h1>
         </div>
       </>
     </div>
@@ -63,10 +69,12 @@ document.querySelectorAll('.dropdown').forEach(item => {
   });
 });
 
+{/*
 document.addEventListener('click', () => {
   document.querySelectorAll('.submenu').forEach(submenu => {
     submenu.style.display = 'none'; // Close all dropdowns on outside click
   });
 });
+*/}
 
 export default App

@@ -75,6 +75,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+h3 {
+  font-size: 150%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -92,7 +96,6 @@ button:focus-visible {
   list-style-image: url('assets/images/VLSBullet.png');
   padding-left: 1em;
   list-style-position: outside;
-  background-color: pink;
 }
 
 ul.vaporwaveStyle li {
@@ -122,6 +125,29 @@ ul.vaporwaveStyle li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 80px;
+  text-shadow: 2px 1px 5px rgb(42, 14, 112);
+}
+
+.gradient-text-cosma {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(to right, #dfb1ea, #6a3c8d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 80px;
+  text-shadow: 2px 1px 5px rgb(224, 142, 225);
+}
+
+.gradient-text-essenceShard {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(to right, #34ebeb, #16b1ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 80px;
+  text-shadow: 2px 1px 5px rgb(68, 184, 226)
 }
 
 /* Basic Menu Styling */
@@ -179,17 +205,16 @@ ul.vaporwaveStyle li {
 /* elements to the left */
 
 #leftSpaced {
-  display: flex;
   margin-left: 10px;
 }
 
 /* elements to the right */
 
-#rightSpaced {
-  display: flex;
+.rightSpaced {
   text-align: right 20px;
 }
 
+/* Sectioned divs */
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -210,5 +235,28 @@ ul.vaporwaveStyle li {
 .div3 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.parentAlt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.div1Alt {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div2Alt {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div3Alt {
+    grid-column-start: 1;
     grid-row-start: 2;
 }

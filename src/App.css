@@ -43,6 +43,24 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.glow {
+  color: #c434d2;
+  -webkit-animation: glow-1 1s ease-in-out infinite alternate;
+  font-size: 20px;
+}
+
+@-webkit-keyframes glow-1 {
+  from {
+    text-shadow:
+    0 0 10px #ba2ff5,
+    0 0 20px #f260fc,
+    0 0 70px #f260fc;
+  }
+
+  to {
+    text-shadow:
+    0 0 30px #ba2ff5,
+    0 0 100px #f260fc,
+    0 0 350px #f260fc;
+  }
 }

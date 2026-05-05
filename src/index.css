@@ -110,12 +110,6 @@ ul.vaporwaveStyle li {
   margin: 0 auto;
 }
 
-.headerImage {
-  background-image: url('assets/images/WSIHeader.png');
-  background-repeat: no-repeat;
-  background-position: 25px center;
-}
-
 /* special text styles */
 .gradient-text {
   font-size: 50px;
